@@ -1,0 +1,38 @@
+.slick-list{
+  height: 400px;
+}
+
+.slick-track{
+  height: 100%;
+  width: auto;
+}
+
+
+@media (min-width: 768px) {
+       .navbar .navbar-nav {
+           display: inline-block;
+           float: none;
+       }
+       .navbar{
+         margin-bottom: 0;
+       }
+
+       .navbar .navbar-collapse {
+           text-align: center;
+       }
+
+    /*.container {
+      margin: 0 auto;
+      padding: 40px;
+      width: 80%;
+      height: 100%;
+      color: #333;
+      background: #419be0;
+    }*/
+
+
+       .center-logo {
+         margin-left: 50px;
+         margin-right: 50px;
+       }
+   }
