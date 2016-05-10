@@ -1,3 +1,12 @@
+.slick-list{
+  height: 500px;
+}
+
+.slick-track{
+  height: 100%;
+  width: auto;
+}
+
 .footer {
   position: absolute;
   right: 0;
@@ -8,28 +17,72 @@
   text-align: center;
 }
 .main{
-
-}
-.main-content{
-
-  border-top-left-radius: 5px;
+  background: white;
+  border-top-right-radius:15px;
+  border-top-left-radius: 15px;
   overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 }
+
 .main-content > header {
   background: aliceblue;
+}
+
+.main-content{
+  border-right: 1px solid #ccc;
+  overflow: hidden;
+}
+.sidebar{
 
 }
 
-.sidebar{
-  background: green;
-  border-top-right-radius: 5px;
+.sidebar > header{
+  background: mintcream;
 }
 .main header>h2{
   font-weight: bolder;
   padding-left: 10px;
   padding-right: 10px;
 }
+.main header{
+  margin-bottom: 10px;
+}
 .section-separator{
   margin-top: 60px;
   margin-bottom: 30px;
+}
+
+.tag{
+  position: relative;
+  height: 30px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  margin-top: -5px;
+  margin-left: -5px;
+
+}
+
+.single_tag:not(:first-child){
+  margin-left: 2.5px;
+}
+
+.single_tag{
+  padding: 5px;
+  margin-right: 2.5px;
+  position: relative;
+  background: lemonchiffon;
+  height: 100%;
+  font-size: 1.3em;
+  border-left: 3px solid red;
+}
+.media{
+  margin: 0;
+}
+.media img{
+  width: 48px;
+  height: 48px;
+}
+.upcoming-name{
+  display: block;
 }
