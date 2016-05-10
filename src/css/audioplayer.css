@@ -1,0 +1,30 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+.audio-player{
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.audio-player > .artwork{
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+}
+
+.audio-player .artwork > img{
+  width: 100%;
+}
+
+.audio-player > .artwork-text{
+  display: inline-block;
+  margin: 0px 5px;
+  width: 20%;
+}
+.audio-player > .controls{
+  display: inline-block;
+}
+
+.audio-player > .controls i{
+  font-size: 1.3em;
+}

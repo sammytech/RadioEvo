@@ -1,0 +1,25 @@
+@import "header.css";
+@import "audioplayer.css";
+@import "layout.css";
+body{
+  background: #ccc;
+}
+
+#app{
+  margin-bottom: 50px;
+  background: white;
+  min-height: 100%;
+}
+
+
+#audio{
+  position: fixed;
+  padding: 5px 20px 5px;
+  border-top: 1px solid;
+  height: 50px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: #ccc;
+  z-index: 1000;
+}

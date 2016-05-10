@@ -1,0 +1,35 @@
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.main{
+
+}
+.main-content{
+
+  border-top-left-radius: 5px;
+  overflow: hidden;
+}
+.main-content > header {
+  background: aliceblue;
+
+}
+
+.sidebar{
+  background: green;
+  border-top-right-radius: 5px;
+}
+.main header>h2{
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.section-separator{
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
