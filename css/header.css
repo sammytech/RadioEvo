@@ -1,10 +1,19 @@
 
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
 
+.navbar-fixed-top {
+    min-height: 80px;
+}
 
 @media (min-width: 768px) {
        .navbar .navbar-nav {
            display: inline-block;
            float: none;
+           vertical-align:bottom
        }
        .navbar{
          margin-bottom: 0;
@@ -14,18 +23,25 @@
            text-align: center;
        }
 
-    /*.container {
-      margin: 0 auto;
-      padding: 40px;
-      width: 80%;
-      height: 100%;
-      color: #333;
-      background: #419be0;
-    }*/
-
-
-       .center-logo {
-         margin-left: 50px;
-         margin-right: 50px;
+       .center-logo div {
+         height: 80px;
+         width: 80px;
+         padding: 5px;
+         background: url("../img/logo.png") center no-repeat;
+         background-origin: content-box;
+         background-size: cover;
        }
+
+       .center-logo{
+         margin-left: 25px;
+         margin-right: 25px;
+       }
+
+   }
+
+   @media (max-width: 767px) {
+       .navbar-nav > li > a {
+       line-height: 20px;
+       padding-top: 10px;
+       padding-bottom: 10px;}
    }
