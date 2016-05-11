@@ -10,7 +10,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           {/*<!-- Brand and toggle get grouped for better mobile display -->*/}
           <div class="navbar-header">
@@ -41,10 +41,10 @@ export default class Header extends React.Component {
                 </ul>
               </li>
               <li class="center-logo">
-                <a href="#">Brand</a>
+                <a href="#"><div></div></a>
               </li>
               <li><a href="#">Artists<span class="sr-only">(current)</span></a></li>
-              <li class="active"><a href="#">Events<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Events<span class="sr-only">(current)</span></a></li>
 
             </ul>
           </div>
