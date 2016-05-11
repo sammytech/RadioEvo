@@ -1,0 +1,3 @@
+webpack;
+rsync -avz --progress --exclude components --exclude '.DS_Store' --exclude '*.js' src/ dist/;
+./git-gh-deploy dist;

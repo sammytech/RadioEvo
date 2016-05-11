@@ -41,10 +41,10 @@ export default class Footer extends React.Component {
           </div>
           <div class="col-md-4">
             {/*<iframe src="//lightwidget.com/widgets/166a4e53c7c358a6be6dddd4dbff9fac.html" id="lightwidget_166a4e53c7" name="lightwidget_166a4e53c7"  scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>*/}
-            <iframe src="//snapwidget.com/in/?u=ZmNiYXJjZWxvbmF8aW58MTIwfDN8NXwwMDAwMDB8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=110516" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+            <iframe src="//snapwidget.com/in/?u=ZmNiYXJjZWxvbmF8aW58MTIwfDN8NXwwMDAwMDB8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=110516" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameBorder="0" scrolling="no"></iframe>
           </div>
         </div>
-        <footer class="row">Designed and Developed by Sammytech</footer>
+        <footer class="row">Designed and Developed by Sammytech 2016</footer>
 
       </div>
     );
