@@ -1,0 +1,135 @@
+.slick-list{
+  height: 400px;
+}
+
+.slick-track{
+  height: 100%;
+  width: auto;
+}
+
+
+.main{
+  background: white;
+  border-top-right-radius:15px;
+  border-top-left-radius: 15px;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-content > header {
+  background: aliceblue;
+}
+
+.main-content{
+  border-right: 1px solid #ccc;
+  overflow: hidden;
+}
+.sidebar{
+
+}
+
+.sidebar > header{
+  background: mintcream;
+}
+.main header>h2{
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main header{
+  margin-bottom: 10px;
+}
+.section-separator{
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.tag{
+  position: relative;
+  height: 30px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  margin-top: -5px;
+  margin-left: -5px;
+
+}
+
+.single_tag:not(:first-child){
+  margin-left: 2.5px;
+}
+
+.single_tag{
+  padding: 5px;
+  margin-right: 2.5px;
+  position: relative;
+  background: lemonchiffon;
+  height: 100%;
+  font-size: 1.3em;
+  border-left: 3px solid red;
+}
+.media{
+  margin: 0;
+}
+.media img{
+  width: 48px;
+  height: 48px;
+}
+.upcoming-name{
+  display: block;
+}
+.overlay{
+  background: #000000;
+  opacity: 0.3;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+}
+.banner{
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  /*padding-bottom: 20px;*/
+}
+.slick-dots{
+  z-index: 301;
+  bottom: 0 !important;
+}
+.slick-prev, .slick-next{
+  z-index: 301;
+  height: 40px !important;
+  width: 40px !important;
+
+}
+.slick-prev::before, .slick-next::before{
+    font-size: 40px !important;
+}
+.slick-prev{
+  left:50px !important;
+
+}
+.slick-next{
+  right:25px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  -webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+-o-transition: all 0.1s ease;
+-ms-transition: all 0.1s ease;
+}
+.slick-slider{
+  margin-bottom: 0 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: blue !important;
+  font-size: 20px !important;
+  -webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+-o-transition: all 0.1s ease;
+-ms-transition: all 0.1s ease;
+}
