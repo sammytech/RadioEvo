@@ -1,6 +1,8 @@
 @import "header.css";
 @import "audioplayer.css";
 @import "layout.css";
+@import "footer.css";
+
 body{
   background: #efefef
 
@@ -14,7 +16,7 @@ body{
 
 #audio{
   position: fixed;
-  padding: 5px 20px 5px;
+  padding: 5px 0px 5px;
   border-top: 1px solid;
   height: 50px;
   left: 0px;

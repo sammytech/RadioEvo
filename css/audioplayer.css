@@ -27,13 +27,13 @@
   display: inline-block;
   margin-left: 5px;
   margin-right: 5px;
-  width: 40%;
+  width: 30%;
   height: 40px;
   vertical-align: top;
 }
 
 .audio-player > .controls{
-  display: block;
+  text-align:center;
 }
 
 .controls-icon{
@@ -44,29 +44,28 @@
   margin-right: 5px;
 }
 
-.right{
-  float: right;
+.left {
+    float:left;
+    text-align: left;
 }
 
+.center {
+    display: inline-block;
+    margin:0 auto;
+}
 
+.right {
+    float:right;
+}
 .audio-player > .controls i{
   font-size: 2em;
-  /*vertical-align: middle;*/
 }
 
-.social-wrapper , .badges-wrapper{
+.badges-wrapper{
   max-height: 40px;
+  text-align: right;
 }
 
 .audio-player img{
   height: 40px;
-
-}
-
-.social-wrapper img{
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.twitter-logo img{
-  background-color: #292f33;
 }

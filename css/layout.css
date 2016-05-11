@@ -1,5 +1,5 @@
 .slick-list{
-  height: 500px;
+  height: 400px;
 }
 
 .slick-track{
@@ -7,15 +7,7 @@
   width: auto;
 }
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
+
 .main{
   background: white;
   border-top-right-radius:15px;
@@ -99,11 +91,12 @@
 .banner{
   position: relative;
   overflow: hidden;
-  margin-top: 55px;
-  padding-bottom: 20px;
+  margin-top: 80px;
+  /*padding-bottom: 20px;*/
 }
 .slick-dots{
   z-index: 301;
+  bottom: 0 !important;
 }
 .slick-prev, .slick-next{
   z-index: 301;
@@ -120,4 +113,23 @@
 }
 .slick-next{
   right:25px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  -webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+-o-transition: all 0.1s ease;
+-ms-transition: all 0.1s ease;
+}
+.slick-slider{
+  margin-bottom: 0 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: blue !important;
+  font-size: 20px !important;
+  -webkit-transition: all 0.1s ease;
+-moz-transition: all 0.1s ease;
+-o-transition: all 0.1s ease;
+-ms-transition: all 0.1s ease;
 }
