@@ -27,3 +27,35 @@ footer{
   vertical-align: center;
 
 }
+
+.app-download{
+  background-color: azure;
+  padding: 50px 50px;
+
+}
+
+.info{
+  text-align: left;
+  line-height: 90px;
+}
+
+.info p{
+  line-height: normal;
+}
+
+.info .badges-wrapper{
+  text-align: center;
+}
+.info .badges-wrapper img.apple{
+  height: 47px;
+}
+
+.info .badges-wrapper img.google{
+  height: 70px;
+}
+.devices{
+  background: url("../img/evolution_device.png") no-repeat ;
+  height: 300px;
+  width: 300px;
+background-size: contain;
+}
