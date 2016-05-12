@@ -1,27 +1,15 @@
 @import "header.css";
 @import "audioplayer.css";
-@import "layout.css";
+@import "front.css";
 @import "footer.css";
+@import "gallery.css";
+@import "main.css";
 
 body{
-  background: #efefef
-
+  background: #efefef;
 }
 
 #app{
   margin-bottom: 50px;
   min-height: 100%;
-}
-
-
-#audio{
-  position: fixed;
-  padding: 5px 0px 5px;
-  border-top: 1px solid;
-  height: 50px;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  background: #efefef;
-  z-index: 1000;
 }

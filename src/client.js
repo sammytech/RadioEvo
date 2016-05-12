@@ -1,9 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
-import Layout from "./components/Layout";
-import AudioPlayer from "./components/AudioPlayer"
+import Main from "./pages/MainPage";
+import Gallery from "./pages/Gallery"
+import Front from "./pages/Front"
 const app = document.getElementById('app');
-const audio = document.getElementById('audio');
-ReactDOM.render(<Layout/>, app);
-ReactDOM.render(<AudioPlayer/>, audio);
+ReactDOM.render(<Router history={hashHistory}>
+    <Route path="/" component={Main}>
+      <IndexRoute component={Front}></IndexRoute>
+    <Route path="gallery" name="gallery" component={Gallery}></Route>
+    </Route>
+  </Router>,
+
+app);

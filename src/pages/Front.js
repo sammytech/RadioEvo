@@ -1,7 +1,6 @@
 import React from "react";
 
-import Footer from "./Footer";
-import Header from "./Header";
+
 import Slider from "react-slick"
 
 export default class Layout extends React.Component {
@@ -26,7 +25,7 @@ export default class Layout extends React.Component {
     };
     return (
       <div class="row">
-        <Header/>
+        {/*<Header/>*/}
         <div class="banner">
         	<Slider {...settings}>
           	<img src='http://placehold.it/1000x1000' />
@@ -107,7 +106,7 @@ export default class Layout extends React.Component {
           </section>
           {/*<div class="col-lg-1"></div>*/}
         </div>
-        <Footer />
+        {/*<Footer />*/}
       </div>
     );
   }

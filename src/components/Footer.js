@@ -5,6 +5,23 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div class="footer container">
+        <div class="row app-download">
+          <div className="col-md-8 info">
+            <h1>Download the free app</h1>
+          <p>Listen to various kinds of genres, Afro pop, hip hop, rap etc.</p>
+          <p>Listen to young people/ young entrepreneurs share their vision and dreams through our weekly shows</p>
+          <div class="badges-wrapper">
+              <a  target="_blank" href='https://play.google.com/store/apps/details?id=com.radioevo.EvolutionRadio&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                <img class="google" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+              </a>
+              <a  target="_blank" href='https://itunes.apple.com/us/app/evolution-radio/id1075889218?mt=8'>
+                <img class="apple"  alt='Download on the App Store' src='img/apple_download.svg'/>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4 devices"></div>
+
+        </div>
         <div class="social-wrapper row">
           <h1>CONNECT WITH US</h1>
           <div>

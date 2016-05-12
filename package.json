@@ -18,6 +18,7 @@
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-icons": "^2.0.1",
+    "react-router": "^2.4.0",
     "react-slick": "^0.12.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.12.9",

@@ -69,6 +69,7 @@ export default class AudioPlayer extends React.Component {
 
   render() {
     return (
+
       <div class="container">
         <audio ref="audio" preload='none'>
           <source src="http://stream.breddmedia.hu:8060/live.mp3?icy=http" type="audio/mpeg" />
