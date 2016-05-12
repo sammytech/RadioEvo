@@ -61,7 +61,7 @@
   font-size: 2em;
 }
 
-.badges-wrapper{
+.audio-player .badges-wrapper{
   max-height: 40px;
   text-align: right;
 }

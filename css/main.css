@@ -1,0 +1,16 @@
+#audio{
+  position: fixed;
+  padding: 5px 0px 5px;
+  border-top: 1px solid;
+  height: 50px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  background: #efefef;
+  z-index: 1000;
+}
+
+
+.main-page{
+  margin-top: 80px;
+}
