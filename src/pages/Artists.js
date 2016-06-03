@@ -28,7 +28,7 @@ export default class Artists extends React.Component {
  fetchData(letter){
    this.setState({artists: []});
    $.ajax({
-     url: "../data/artists.json",
+     url: "data/artists.json",
      dataType: 'json',
      cache: false,
      success: function(data) {
