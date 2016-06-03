@@ -13,7 +13,7 @@ export default class Layout extends React.Component {
 
   componentDidMount(){
     $.ajax({
-      url: "../data/news.json",
+      url: "data/news.json",
       dataType: 'json',
       cache: false,
       success: function(data) {

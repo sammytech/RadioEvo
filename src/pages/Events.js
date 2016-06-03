@@ -20,7 +20,7 @@ export default class Events extends React.Component {
  fetchData(more){
    this.setState({events: []});
    $.ajax({
-     url: "../data/events.json",
+     url: "data/events.json",
      dataType: 'json',
      cache: false,
      success: function(data) {
@@ -72,7 +72,7 @@ export default class Events extends React.Component {
                       </div>
                       {
                         event.price != null ? <div className="price"> {event.price} </div> : null
-                        
+
                       }
 
                     </div>
