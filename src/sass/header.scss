@@ -1,0 +1,111 @@
+
+$bgDefault      : #041016;
+$bgHighlight    : #93ceeb;
+// #FFA22E
+$colDefault     : $bgHighlight;
+$colHighlight   : $bgDefault;
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  text-transform: capitalize;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus {
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault;
+
+  }
+  .navbar-nav {
+    text-transform: uppercase;
+    > li {
+      font-size: 1.2em;
+      font-weight: 600;
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight;
+          background-color: $bgHighlight;
+        }
+
+        }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+}
+
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+@media (min-width: 768px) {
+       .navbar .navbar-nav {
+           display: inline-block;
+           float: none;
+           vertical-align:bottom
+       }
+       .navbar{
+         margin-bottom: 0;
+       }
+
+       .navbar .navbar-collapse {
+           text-align: center;
+       }
+
+       .center-logo div {
+         height: 80px;
+         width: 80px;
+         padding: 5px;
+         background: url("../img/logo.png") center no-repeat;
+         background-origin: content-box;
+         background-size: cover;
+       }
+
+       .center-logo{
+         margin-left: 25px;
+         margin-right: 25px;
+       }
+
+   }
+
+   @media (max-width: 767px) {
+       .navbar-nav > li > a {
+       line-height: 20px;
+       padding-top: 10px;
+       padding-bottom: 10px;}
+   }

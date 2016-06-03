@@ -1,0 +1,38 @@
+@import "variables";
+$row_height: 150px;
+
+#events{
+  background: $contentBg;
+  padding-bottom: $sectionBottomPadding;
+  .event{
+    padding-left: 20px;
+    .separator{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height:1px;
+      background:#717171;
+      border-bottom:1px solid #313030;
+    }
+    .media-body{
+      position: relative;
+    }
+    img{
+      height: $row_height;
+      width: $row_height;
+    }
+    .event-title{
+      font-size: 1.5em;
+    }
+    .price{
+      position: absolute;
+      right:0;
+      top: 0;
+      padding: 5px;
+      background-color: green;
+      font-weight: 600;
+      color: white;
+    }
+
+  }
+
+}

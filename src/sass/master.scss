@@ -1,0 +1,10 @@
+@import 'variables';
+body{
+  background: $background;
+  color: $textColor !important;
+}
+
+#app{
+  margin-bottom: 50px;
+  min-height: 100%;
+}

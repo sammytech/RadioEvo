@@ -1,18 +1,33 @@
 import React from "react";
-
-
 import Slider from "react-slick"
-
+import '../sass/front.scss';
+import { IndexLink, Link } from "react-router";
 export default class Layout extends React.Component {
   constructor() {
     super();
     this.state = {
+      news: [],
       title: "Welcome to line",
     };
   }
 
-  changeTitle(title) {
-    this.setState({title});
+  componentDidMount(){
+    $.ajax({
+      url: "../data/news.json",
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({news: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+
+    // this.serverRequest = $.get("../data/news.json", function (result) {
+    //   console.log(result);
+    //   var lastGist = result[0];
+    // }.bind(this));
   }
 
   render() {
@@ -23,9 +38,9 @@ export default class Layout extends React.Component {
       speed: 1000,
 
     };
+    // console.log(JSON.parse(news));
     return (
-      <div class="row">
-        {/*<Header/>*/}
+      <div id="start-page">
         <div class="banner">
         	<Slider {...settings}>
           	<img src='http://placehold.it/1000x1000' />
@@ -37,37 +52,43 @@ export default class Layout extends React.Component {
           </div>
         </div>
         {/*<hr class="section-separator"/>*/}
-        <div class="container main">
-          <section class="col-lg-9 main-content">
+        <div class="container-fluid main">
+          <section class="col-lg-9 col-md-9 main-content">
             <header class="row">
               <h2>News</h2>
             </header>
             <div class="news row">
-              {[,...Array(10)].map((x, i) =>
+              {this.state.news.map((report, i) =>
                 <div key={i} class="col-sm-6 col-md-4">
-
+                  <Link to="/">
                   <div class="thumbnail">
                     <div class="tag">
-                      <span class="single_tag">Video, Music</span>
+                      <span class="single_tag">
+                        {report.music ? "Music" : (report.show ? "Show" : (report.event ? "Event" : "Unclassified")) }
+                        {report.audio ? ", Audio" : "" }
+                        {report.video ? ", Video" : "" }
+                        </span>
                     </div>
-                    <img src="http://placehold.it/400x400" alt="..."/>
+                    <div className="overlay">
+                      READ MORE
+                    </div>
+                    <img src={report.thumbnail} alt="..."/>
                     <div class="caption">
-                      <h3>Thumbnail label</h3>
-                      <p>...</p>
-                      <p>
-                        <a href="#" class="btn btn-primary" role="button">Read More...</a>
-                          {/*<a href="#" class="btn btn-default" role="button">Button</a>    */}
-                      </p>
+                      <h3>{report.title}</h3>
+                    <p>{report.preview}</p>
+                      {/*<p>*/}
+                      {/*<a href="#" class="btn btn-primary" role="button">Read More...</a>*/}
+                      {/*</p>*/}
                     </div>
                   </div>
-
+                  </Link>
                 </div>
               )}
 
             </div>
           </section>
 
-          <section class="col-lg-3 sidebar">
+          <section class="col-lg-3 col-md-3 sidebar">
             <header class="row">
               <h2>Upcoming</h2>
             </header>

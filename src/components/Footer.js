@@ -1,10 +1,11 @@
 import React from "react";
-
+import '../sass/footer.scss';
 
 export default class Footer extends React.Component {
   render() {
+    var divStyle = {border:"none", overflow:"hidden", width:"300px", height: "500px"}
     return (
-      <div class="footer container">
+      <div className="container-fluid" id="footer">
         <div class="row app-download">
           <div className="col-md-8 info">
             <h1>Download the free app</h1>
@@ -58,7 +59,8 @@ export default class Footer extends React.Component {
           </div>
           <div class="col-md-4">
             {/*<iframe src="//lightwidget.com/widgets/166a4e53c7c358a6be6dddd4dbff9fac.html" id="lightwidget_166a4e53c7" name="lightwidget_166a4e53c7"  scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>*/}
-            <iframe src="//snapwidget.com/in/?u=ZmNiYXJjZWxvbmF8aW58MTIwfDN8NXwwMDAwMDB8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=110516" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameBorder="0" scrolling="no"></iframe>
+            {/*<iframe src="//snapwidget.com/in/?u=ZmNiYXJjZWxvbmF8aW58MTIwfDN8NXwwMDAwMDB8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=110516" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameBorder="0" scrolling="no"></iframe>*/}
+            <iframe src="//www.intagme.com/in/?u=ZXZvcmFkaW8yNnxpbnw4NXwzfDV8fHllc3w1fHVuZGVmaW5lZHx5ZXM=" allowTransparency="true" frameborder="0" scrolling="no" style={divStyle} ></iframe>
           </div>
         </div>
         <footer class="row">Designed and Developed by Sammytech 2016</footer>

@@ -1,13 +1,19 @@
 import React from "react";
 import { IndexLink, Link } from "react-router";
-
+import '../sass/header.scss';
 // import Title from "./Header/Title";
 
 export default class Header extends React.Component {
+
+
   render() {
-    const frontClass = location.pathname === "/" ? "active" : "";
-    const galleryClass = location.pathname.match(/^\/gallery/) ? "active" : "";
+    const frontClass = location.hash.match(/^#\/\?/) ? "active" : "";
+    const showClass = location.hash.match(/^#\/shows/) ? "active" : "";
+    const musicClass = location.hash.match(/^#\/music/) ? "active" : "";
+    const artistsClass = location.hash.match(/^#\/artists/) ? "active" : "";
+    const eventsClass = location.hash.match(/^#\/events/) ? "active" : "";
     // const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
+    console.log(location.hash)
 
     return (
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -26,28 +32,21 @@ export default class Header extends React.Component {
           {/*<!-- Collect the nav links, forms, and other content for toggling -->*/}
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class={"dropdown" + galleryClass}>
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shows <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    {/*<a href="#">Pictures</a>*/}
-                  <Link to="gallery">Pictures</Link>
-                  </li>
-                  <li><a href="#">Videos</a></li>
-                </ul>
+              <li className={showClass}>
+                <Link className="nav-link" to="/shows" activeClassName="active">Shows</Link>
               </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Music <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Audio</a></li>
-                  <li><a href="#">Videos</a></li>
-                </ul>
+              <li className={musicClass}>
+                <Link to="music">Music </Link>
               </li>
-              <li class="center-logo">
+              <li class={"center-logo " + frontClass}>
                 <IndexLink to="/"><div></div></IndexLink>
               </li>
-              <li><a href="#">Artists<span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Events<span class="sr-only">(current)</span></a></li>
+              <li className={artistsClass}>
+                <Link to="artists">Artists</Link>
+              </li>
+              <li className={eventsClass}>
+                <Link to="events">Events</Link>
+              </li>
 
             </ul>
           </div>

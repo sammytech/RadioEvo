@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+var PlayButton = require('react-icons/lib/io/play');
+var StopButton = require('react-icons/lib/io/stop');
+var VolumeUp = require('react-icons/lib/io/volume-high');
+// import FaBeer from 'react-icons/fa/beer';
 // http://stream.breddmedia.hu:8060/live.mp3?icy=http
+import '../css/audioplayer.css';
 export default class AudioPlayer extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +20,7 @@ export default class AudioPlayer extends React.Component {
 
   componentDidMount() {
    this.audioTag = ReactDOM.findDOMNode(this.refs.audio);
-   this.props.ptag(this.audioTag);
+  //  this.props.ptag(this.audioTag);
    this.playerEvent.loadStart = () => {
       this.setState({
         isLoading: true
@@ -68,6 +73,7 @@ export default class AudioPlayer extends React.Component {
   }
 
   render() {
+    const icon_size = 40;
     return (
 
       <div class="container">
@@ -90,13 +96,15 @@ export default class AudioPlayer extends React.Component {
               </div>
               {/*<div data-icon="ei-spinner-3" data-size="m"></div>*/}
               <div class="center controls-icon">
-                { this.state.isPlaying && !this.state.isLoading ?
-                  <i class="ion-stop" onClick={this._stop.bind(this)}/> :
-                  <i class="ion-play" onClick={this._play.bind(this)}/>
+
+              { this.state.isPlaying && !this.state.isLoading ?
+                 <StopButton size={icon_size} onClick={this._stop.bind(this)}/>:
+                 <PlayButton size={icon_size} onClick={this._play.bind(this)}/>
                 }
+
               </div>
               <div class="right controls-icon">
-                <i class="ion-volume-high"/>
+                <VolumeUp size={icon_size}/>
               </div>
             </div>
           </div>
