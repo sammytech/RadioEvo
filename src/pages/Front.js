@@ -70,12 +70,12 @@ export default class Layout extends React.Component {
                         </span>
                     </div>
                     <div className="overlay">
-                      READ MORE
+                      <div className="more">READ MORE</div>
                     </div>
                     <img src={report.thumbnail} alt="..."/>
                     <div class="caption">
                       <h3>{report.title}</h3>
-                    <p>{report.preview}</p>
+                      <p>{report.preview}</p>
                       {/*<p>*/}
                       {/*<a href="#" class="btn btn-primary" role="button">Read More...</a>*/}
                       {/*</p>*/}

@@ -34,23 +34,77 @@
       width: 100%;
       height: 250px;
     }
+    a{
+      text-decoration: none;
+    }
     .thumbnail{
-      background: $contentBg;
+      background: #d7d7d7;
       overflow: hidden;
       height: 500px;
       position: relative;
+      a {
+        text-decoration: none;
+      }
+      .tag{
+        position: relative;
+        height: 30px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        margin-top: -5px;
+        margin-left: -5px;
+        color: $textColor;
+
+        .single_tag{
+          padding: 5px;
+          margin-right: 2.5px;
+          position: relative;
+          background: #94524A;
+          height: 100%;
+          font-weight: bold;
+          font-size: 1.1em;
+          border-left: 3px solid red;
+        }
+      }
       .caption{
           position: relative;
-          color: $textColor;
+          color: #000;
           z-index: 30;
+          text-decoration: none;
+          h3{
+            text-transform: capitalize;
+          }
+
       }
       .overlay{
         opacity: 0;
+        background: rgba(darken($alternateBg, 30), 0);
         z-index: 2;
+        .more{
+          opacity: 1;
+          margin-top: 35px;
+          height: 250px;
+          line-height: 250px;
+          text-transform: uppercase;
+          font-size: 25px;
+          color: #fff;
+          text-align: center;
+          vertical-align: center;
+          font-weight: bolder;
+        }
       }
       &:hover{
         .overlay{
-          opacity: 0.6;
+          opacity: 1;
+          background: rgba(darken($alternateBg, 50), 0.9);
+          transition: background 0.25s;
+          transition: opacity 0.25s;
+          -webkit-transition: background 0.25s;
+          -webkit-transition: opacity 0.25s;
+        }
+        .caption{
+          color: $textColor;
+          transition: color 0.25s;
+          -webkit-transition: color 0.25s;
         }
       }
     }
@@ -75,30 +129,7 @@
     margin-bottom: 30px;
   }
 
-  .tag{
-    position: relative;
-    height: 30px;
-    margin-bottom: 5px;
-    overflow: hidden;
-    margin-top: -5px;
-    margin-left: -5px;
 
-  }
-
-  .single_tag:not(:first-child){
-    margin-left: 2.5px;
-  }
-
-  .single_tag{
-    padding: 5px;
-    margin-right: 2.5px;
-    position: relative;
-    background: #94524A;
-    height: 100%;
-    font-weight: bold;
-    font-size: 1.1em;
-    border-left: 3px solid red;
-  }
   .media{
     margin: 0;
   }
