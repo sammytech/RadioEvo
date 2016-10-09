@@ -43,7 +43,7 @@ export default class Layout extends React.Component {
       <div id="start-page">
         <div class="banner">
         	<Slider {...settings}>
-            <img src='img/ladies_room' />
+            <img src='img/ladies_room.jpg' />
           	<img src='http://placehold.it/1000x1000' />
             <img src='http://www.templateof.com/postpic/2015/05/success-website-banner_269676.png' />
             <img src='http://www.templateof.com/postpic/2015/05/backgrounds-design-web-banners_269681.jpg'/>
