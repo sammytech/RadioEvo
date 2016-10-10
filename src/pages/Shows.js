@@ -4,18 +4,20 @@ var Tab = ReactTabs.Tab;
 var Tabs = ReactTabs.Tabs;
 var TabList = ReactTabs.TabList;
 var TabPanel = ReactTabs.TabPanel;
+import LazyLoad from 'react-lazyload';
+
 import '../sass/shows.scss'
 export default class Shows extends React.Component {
 
  constructor(props){
    super(props)
    this.state = {
-     gallery : [,...Array(10)],
+     gallery : [,...Array(122)],
      videos : [,...Array(4)],
      pictures : [,...Array(6)]
    }
  }
-
+// <img src={"img/event_pic/event-"+(i-1)} alt="..."/>
  handleSelect(i, last){
 
 
@@ -36,11 +38,14 @@ export default class Shows extends React.Component {
             <Tab>Pictures</Tab>
           </TabList>
           <TabPanel>
+          
             <div>
               {this.state.gallery.map((x, i) =>
                 <div key={i} class="col-xs-6 col-md-3">
                   <a href="#" class="thumbnail">
-                    <img src="http://placehold.it/400x400" alt="..."/>
+                    <LazyLoad height={400} once>
+                      <img src={"img/event_pic/event-thumbnail-"+(i-1)+".jpg"} />
+                    </LazyLoad>
                   </a>
                 </div>
             )}

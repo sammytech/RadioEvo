@@ -35,7 +35,7 @@ export default class Layout extends React.Component {
       dots: true,
       autoplay: true,
       infinite: true,
-      speed: 1000,
+      speed: 3000,
 
     };
     // console.log(JSON.parse(news));

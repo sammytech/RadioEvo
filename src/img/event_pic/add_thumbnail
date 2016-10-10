@@ -1,0 +1,6 @@
+counter=0
+for file in *.jpg
+do
+   cp "$file" "event-thumbnail-$counter.jpg"
+   let counter+=1
+done
