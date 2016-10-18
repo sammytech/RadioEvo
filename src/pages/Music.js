@@ -29,56 +29,10 @@ export default class Music extends React.Component {
         <h1 className="title-header">
           MUSIC
         </h1>
-        <Tabs
-        onSelect={this.handleSelect.bind(this)}
-        selectedIndex={0}
-        >
-          <TabList>
-            <Tab>All</Tab>
-            <Tab>Audios</Tab>
-            <Tab>Videos</Tab>
-          </TabList>
-          <TabPanel>
-            <div>
-              {this.state.all.map((x, i) =>
-                  <MusicCell key={i}
-                  title="Eri Wa"
-                  preview="Things are happening"
-                  audio={(i-1)%2 == 1}
-                  video={(i-1)%2 == 0}
-                  read={(i-1)%3 == 0}
-                />
-
-            )}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div>
-              {this.state.audios.map((x, i) =>
-                <MusicCell key={i}
-                  title="Eri Wa"
-                  preview="Things are happening"
-                  audio={true}
-                  video={i%2==0}
-                  read={i%3==0}
-                />
-            )}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div>
-              {this.state.videos.map((x, i) =>
-                <MusicCell key={i}
-                  title="Eri Wa"
-                  preview="Things are happening"
-                  audio={false}
-                  video={true}
-                  read={true}
-                />
-            )}
-            </div>
-          </TabPanel>
-      </Tabs>
+        <div className="coming-soon">
+          COMING SOON
+        </div>
+        
 
 
       </div>

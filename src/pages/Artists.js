@@ -64,30 +64,10 @@ export default class Artists extends React.Component {
         <h1 className="title-header">
           Artists
         </h1>
-        <div className="filters">
-          {alphabet.map((letter, i)=>
-            <span key={i}>
-            <Link to={{pathname:"/artists", query: {letter: letter.toLowerCase()}}}> {letter.toUpperCase()} </Link>
-            </span>
-        )}
+        <div className="coming-soon">
+          COMING SOON
         </div>
-        <div>
-          {
-            this.state.artists.map((artist, i)=>
-              <div key={i} class="col-sm-6 col-md-4 artist">
-                <Link to="/artist">
-                  <div className="artist-thumbnail">
-                    <img src={artist.avatar}/>
-                    <div class="after">
-                      <h3>{artist.first_name.toUpperCase()}</h3>
-                    </div>
-                  </div>
-                </Link>
-
-              </div>
-            )
-          }
-        </div>
+        
       </div>
     );
   }
